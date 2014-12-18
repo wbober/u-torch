@@ -1,0 +1,21 @@
+[Eagle]
+Version="06 06 00"
+Platform="Windows"
+Serial="7216E5215F-LS-WLM-1CS"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/Wojtek/Sastrion/st-node2-pcb/drilegend.lbr"
+UsedLibrary="C:/Users/Wojtek/Sastrion/st-node2-pcb/adl_lib_001.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="652 321 1251 720"
+State=1
+Number=0
+
+[Desktop]
+Screen="1920 1080"
+Window="Win_1"
