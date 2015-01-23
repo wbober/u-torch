@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="mm" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18,12 +18,12 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -48,8 +48,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -2754,102 +2754,103 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="IC1" library="linear-technology" package="DFN10-3X3" value="LTC4062" x="16.54" y="10.87" smashed="yes" rot="R90">
-<attribute name="NAME" x="14.635" y="8.965" size="0.3" layer="25" rot="R90"/>
-<attribute name="VALUE" x="19.715" y="8.965" size="0.3" layer="27" rot="R90"/>
+<attribute name="NAME" x="17.165" y="12.465" size="0.4" layer="25"/>
+<attribute name="VALUE" x="19.715" y="8.965" size="0.4" layer="27" rot="R90"/>
 <attribute name="OC_NEWARK" value="58M0900" x="16.54" y="10.87" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="LTC4062EDD#PBF" x="16.54" y="10.87" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="16.54" y="10.87" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1648037" x="16.54" y="10.87" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC2" library="linear-technology" package="DFN10-3X3" value="LTC3454" x="22.86" y="11.049" smashed="yes" rot="R270">
-<attribute name="NAME" x="24.765" y="12.954" size="0.3" layer="25" rot="R270"/>
-<attribute name="VALUE" x="19.685" y="12.954" size="0.3" layer="27" rot="R270"/>
+<attribute name="NAME" x="22.546" y="12.665" size="0.4" layer="25"/>
+<attribute name="VALUE" x="19.685" y="12.954" size="0.4" layer="27" rot="R270"/>
 </element>
 <element name="L1" library="PowerMagnetics" package="WE-MAPI_2510" value="4.7uH" x="26.897" y="11.049" smashed="yes" rot="R90">
-<attribute name="VALUE" x="25.3095" y="9.779" size="0.3" layer="27" rot="R90"/>
-<attribute name="NAME" x="29.1195" y="9.779" size="0.3" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.3095" y="9.779" size="0.4" layer="27" rot="R90"/>
+<attribute name="NAME" x="28.1805" y="10.421" size="0.4" layer="25" rot="R270"/>
 </element>
 <element name="R1" library="adl_lib_001" package="ADL_LIB_001_R0402" value="3.3k 1%" x="23.872" y="8.8224" smashed="yes" rot="R180">
-<attribute name="NAME" x="24.507" y="8.1874" size="0.3" layer="25" rot="R180"/>
-<attribute name="VALUE" x="24.507" y="10.7274" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="24.207" y="6.9874" size="0.4" layer="25" rot="R180"/>
+<attribute name="VALUE" x="24.507" y="10.7274" size="0.4" layer="27" rot="R180"/>
 </element>
 <element name="X1" library="adl_lib_001" package="USB-MICROB" value="USB-MICROB" x="10.16" y="10.06" smashed="yes" rot="R270">
-<attribute name="NAME" x="9.81" y="11.66" size="0.3" layer="25" rot="R270"/>
-<attribute name="VALUE" x="6.985" y="11.965" size="0.3" layer="27" rot="R270"/>
+<attribute name="NAME" x="11.44" y="6.01" size="0.4" layer="25"/>
+<attribute name="VALUE" x="6.985" y="11.965" size="0.4" layer="27" rot="R270"/>
 </element>
 <element name="C1" library="adl_lib_001" package="SMC_A" value="10uF 6.3V tantal" x="23.991" y="13.97" smashed="yes">
-<attribute name="NAME" x="22.391" y="14.945" size="0.3" layer="25"/>
-<attribute name="VALUE" x="22.391" y="11.97" size="0.3" layer="27"/>
+<attribute name="NAME" x="23.791" y="14.945" size="0.4" layer="25"/>
+<attribute name="VALUE" x="22.391" y="11.97" size="0.4" layer="27"/>
 </element>
 <element name="LED+" library="wirepad" package="1,6/0,8" value="WIREPAD1,6/0,8" x="19.939" y="13.97" smashed="yes">
-<attribute name="NAME" x="19.177" y="14.986" size="0.3" layer="25" ratio="10"/>
-<attribute name="VALUE" x="19.939" y="14.57" size="0.3" layer="27"/>
+<attribute name="NAME" x="19.177" y="14.986" size="0.4" layer="25" ratio="10"/>
+<attribute name="VALUE" x="19.939" y="14.57" size="0.4" layer="27"/>
 </element>
 <element name="LED-" library="wirepad" package="1,6/0,8" value="WIREPAD1,6/0,8" x="17.78" y="13.97" smashed="yes">
-<attribute name="NAME" x="17.018" y="14.986" size="0.3" layer="25" ratio="10"/>
-<attribute name="VALUE" x="17.78" y="14.57" size="0.3" layer="27"/>
+<attribute name="NAME" x="17.018" y="14.986" size="0.4" layer="25" ratio="10"/>
+<attribute name="VALUE" x="17.78" y="14.57" size="0.4" layer="27"/>
 </element>
 <element name="BAT-" library="wirepad" package="1,6/0,8" value="WIREPAD1,6/0,8" x="17.78" y="6.05" smashed="yes">
-<attribute name="NAME" x="17.018" y="7.066" size="0.3" layer="25" ratio="10"/>
-<attribute name="VALUE" x="17.78" y="6.65" size="0.3" layer="27"/>
+<attribute name="NAME" x="17.218" y="4.566" size="0.4" layer="25" ratio="10"/>
+<attribute name="VALUE" x="17.78" y="6.65" size="0.4" layer="27"/>
 </element>
 <element name="BAT+" library="wirepad" package="1,6/0,8" value="WIREPAD1,6/0,8" x="19.939" y="6.05" smashed="yes">
-<attribute name="NAME" x="19.177" y="7.066" size="0.3" layer="25" ratio="10"/>
-<attribute name="VALUE" x="19.939" y="6.65" size="0.3" layer="27"/>
+<attribute name="NAME" x="19.377" y="4.566" size="0.4" layer="25" ratio="10"/>
+<attribute name="VALUE" x="19.939" y="6.65" size="0.4" layer="27"/>
 </element>
 <element name="C3" library="adl_lib_001" package="ADL_LIB_001_C0402" value="100nF" x="26.927" y="7.64" smashed="yes">
-<attribute name="NAME" x="26.292" y="8.275" size="0.3" layer="25"/>
-<attribute name="VALUE" x="26.292" y="5.735" size="0.3" layer="27"/>
+<attribute name="NAME" x="28.260115625" y="7.937025" size="0.4" layer="25" rot="R270"/>
+<attribute name="VALUE" x="26.292" y="5.735" size="0.4" layer="27"/>
 </element>
 <element name="R2" library="adl_lib_001" package="ADL_LIB_001_R0402" value="100k 5%" x="19.6912" y="11.0621" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.0562" y="10.4271" size="0.3" layer="25" rot="R90"/>
-<attribute name="VALUE" x="21.5962" y="10.4271" size="0.3" layer="27" rot="R90"/>
+<attribute name="NAME" x="19.3271" y="12.3438" size="0.4" layer="25"/>
+<attribute name="VALUE" x="21.5962" y="10.4271" size="0.4" layer="27" rot="R90"/>
 </element>
 <element name="R3" library="adl_lib_001" package="ADL_LIB_001_R0402" value="360k 1%" x="17.4833" y="7.5514" smashed="yes" rot="R180">
-<attribute name="NAME" x="18.1183" y="6.9164" size="0.3" layer="25" rot="R180"/>
-<attribute name="VALUE" x="18.1183" y="9.4564" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="18.2817" y="7.3836" size="0.4" layer="25"/>
+<attribute name="VALUE" x="18.1183" y="9.4564" size="0.4" layer="27" rot="R180"/>
 </element>
 <element name="R4" library="adl_lib_001" package="ADL_LIB_001_R0402" value="750k 1%" x="18.246" y="8.73" smashed="yes" rot="R180">
-<attribute name="NAME" x="18.881" y="8.095" size="0.3" layer="25" rot="R180"/>
-<attribute name="VALUE" x="18.881" y="10.635" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="18.319" y="9.405" size="0.4" layer="25"/>
+<attribute name="VALUE" x="18.881" y="10.635" size="0.4" layer="27" rot="R180"/>
 </element>
 <element name="R5" library="resistor" package="R0402" value="330 5%" x="14.449" y="5.653" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.084" y="4.891" size="0.3" layer="25" rot="R180"/>
-<attribute name="VALUE" x="15.084" y="7.685" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="15.309" y="5.984" size="0.4" layer="25" rot="R270"/>
+<attribute name="VALUE" x="15.084" y="7.685" size="0.4" layer="27" rot="R180"/>
 </element>
 <element name="R6" library="resistor" package="R0402" value="1k 5%" x="14.449" y="6.793" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.084" y="6.031" size="0.3" layer="25" rot="R180"/>
-<attribute name="VALUE" x="15.084" y="8.825" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="15.269" y="7.084" size="0.4" layer="25" rot="R270"/>
+<attribute name="VALUE" x="15.084" y="8.825" size="0.4" layer="27" rot="R180"/>
 </element>
 <element name="C4" library="adl_lib_001" package="ADL_LIB_001_C0402" value="1uF 6.3V" x="15.23" y="8.73" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.865" y="8.095" size="0.3" layer="25" rot="R180"/>
-<attribute name="VALUE" x="15.865" y="10.635" size="0.3" layer="27" rot="R180"/>
+<attribute name="NAME" x="16.395" y="8.435" size="0.4" layer="25" rot="R90"/>
+<attribute name="VALUE" x="15.865" y="10.635" size="0.4" layer="27" rot="R180"/>
 </element>
 <element name="CHG" library="adl_lib_001" package="CHIP-LED0603" value="" x="14.156" y="14.3358" smashed="yes" rot="R180">
-<attribute name="NAME" x="13.521" y="14.9708" size="0.3" layer="25"/>
+<attribute name="NAME" x="13.521" y="14.9708" size="0.4" layer="25"/>
 <attribute name="VALUE" x="13.521" y="12.4308" size="1.27" layer="27"/>
 </element>
 <element name="R7" library="resistor" package="R0402" value="560 5%" x="15.549" y="13.0716" smashed="yes" rot="R180">
-<attribute name="NAME" x="16.184" y="12.3096" size="0.3" layer="25" rot="R180"/>
-<attribute name="VALUE" x="16.184" y="15.1036" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="15.816" y="13.7904" size="0.4" layer="25"/>
+<attribute name="VALUE" x="16.184" y="15.1036" size="0.4" layer="27" rot="R180"/>
 </element>
 <element name="C2" library="rcl" package="C0603" value="10uF" x="22.606" y="6.096" smashed="yes">
-<attribute name="NAME" x="21.971" y="6.731" size="0.3" layer="25"/>
-<attribute name="VALUE" x="21.971" y="4.191" size="0.3" layer="27"/>
+<attribute name="NAME" x="22.371" y="5.031" size="0.4" layer="25"/>
+<attribute name="VALUE" x="21.971" y="4.191" size="0.4" layer="27"/>
 </element>
 <element name="SWITCH-1" library="wirepad" package="1,6/0,8" value="WIREPAD1,6/0,8" x="25.146" y="6.05" smashed="yes">
-<attribute name="NAME" x="24.384" y="7.066" size="0.3" layer="25" ratio="10"/>
-<attribute name="VALUE" x="25.146" y="6.65" size="0.3" layer="27"/>
+<attribute name="VALUE" x="30.667984375" y="5.53218125" size="0.4" layer="27"/>
 </element>
 <element name="SWITCH-2" library="wirepad" package="1,6/0,8" value="WIREPAD1,6/0,8" x="27.305" y="6.05" smashed="yes">
-<attribute name="NAME" x="26.543" y="7.066" size="0.3" layer="25" ratio="10"/>
-<attribute name="VALUE" x="27.305" y="6.65" size="0.3" layer="27"/>
+<attribute name="VALUE" x="31.34579375" y="6.169078125" size="0.4" layer="27"/>
 </element>
 <element name="R8" library="adl_lib_001" package="ADL_LIB_001_R0402" value="1M 5%" x="23.872" y="7.64" smashed="yes">
-<attribute name="NAME" x="23.237" y="8.275" size="0.3" layer="25"/>
-<attribute name="VALUE" x="23.237" y="5.735" size="0.3" layer="27"/>
+<attribute name="NAME" x="25.325" y="8.537" size="0.4" layer="25" rot="R90"/>
+<attribute name="VALUE" x="23.237" y="5.735" size="0.4" layer="27"/>
 </element>
-<element name="U1" library="WB" package="SOT323" value="2N7002BKW" x="21.15" y="8.25" rot="R270"/>
+<element name="U1" library="WB" package="SOT323" value="2N7002BKW" x="21.15" y="8.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.675" y="7.98" size="0.4" layer="25"/>
+<attribute name="VALUE" x="19.82" y="7.025" size="0.4" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3027,10 +3028,8 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="10"/>
 <contactref element="C4" pad="2"/>
 <contactref element="X1" pad="VBUS"/>
-<contactref element="IC1" pad="7"/>
 <contactref element="CHG" pad="A"/>
 <contactref element="IC1" pad="6"/>
-<wire x1="15.19" y1="11.37" x2="15.19" y2="11.87" width="0.2" layer="1"/>
 <wire x1="13.406" y1="14.3358" x2="13.45" y2="14.2918" width="0.2" layer="1"/>
 <wire x1="13.45" y1="14.2918" x2="13.45" y2="13.05" width="0.2" layer="1"/>
 <wire x1="12.81" y1="11.36" x2="12.82" y2="11.37" width="0.2" layer="1"/>

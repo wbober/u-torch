@@ -21149,14 +21149,10 @@ type RDH, grid 15 mm</description>
 <wire x1="60.96" y1="106.68" x2="60.96" y2="111.76" width="0.1524" layer="91"/>
 <junction x="60.96" y="111.76"/>
 <pinref part="X1" gate="G$1" pin="VBUS"/>
-<pinref part="IC1" gate="G$1" pin="!EN"/>
-<wire x1="88.9" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="101.6" x2="66.04" y2="106.68" width="0.1524" layer="91"/>
 <junction x="66.04" y="111.76"/>
 <pinref part="CHG" gate="G$1" pin="A"/>
 <wire x1="66.04" y1="106.68" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
-<junction x="66.04" y="106.68"/>
 <pinref part="IC1" gate="G$1" pin="!C/5"/>
 <wire x1="88.9" y1="109.22" x2="83.82" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="109.22" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
